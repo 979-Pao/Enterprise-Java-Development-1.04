@@ -1,11 +1,11 @@
 public class ExpresionMatematica {
 
     public static double calcularExpresion(double x, double y) {
-        double parte1 = Math.pow(x, 2);                       // x^2
-        double parte2 = (4 * y) / 5 - x;                      // (4y/5) - x
-        double parte3 = Math.pow(parte2, 2);                  // ((4y/5 - x)^2)
+        double parte1 = x * x;
+        double parte2 = (4 * y) / 5 - x;
+        double parte3 = parte2 * parte2;
 
-        return parte1 + parte3;                               // x^2 + (...)^2
+        return parte1 + parte3;
     }
 
     public static void main(String[] args) {

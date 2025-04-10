@@ -1,11 +1,6 @@
 public class MenoresElementos {
 
     public static void encontrarDosMenores(int[] numeros) {
-        if (numeros.length < 2) {
-            System.out.println("El arreglo debe tener al menos dos elementos.");
-            return;
-        }
-
         int menor = Integer.MAX_VALUE;
         int segundoMenor = Integer.MAX_VALUE;
 
@@ -18,16 +13,12 @@ public class MenoresElementos {
             }
         }
 
-        if (segundoMenor == Integer.MAX_VALUE) {
-            System.out.println("No hay un segundo menor distinto.");
-        } else {
-            System.out.println("El menor valor es: " + menor);
-            System.out.println("El segundo menor valor es: " + segundoMenor);
-        }
+        System.out.println("El menor valor es: " + menor);
+        System.out.println("El segundo menor valor es: " + segundoMenor);
     }
 
     public static void main(String[] args) {
-        int[] array = {4, 3, 1, 1, 5, 8};
+        int[] array = {4, 1, 9, 3, 7, 1};
 
         encontrarDosMenores(array);
     }
